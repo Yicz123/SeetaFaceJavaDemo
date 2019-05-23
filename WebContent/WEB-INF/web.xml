@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>SeetaFaceJavaDemo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+		<servlet-name>test</servlet-name>
+		<servlet-class>project.server.LoginValidator</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>test</servlet-name>
+		<url-pattern>/ProjectServers</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>teacherInfo</servlet-name>
+		<servlet-class>project.server.teacherInfo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>teacherInfo</servlet-name>
+		<url-pattern>/TeacherInfo</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>submit</servlet-name>
+		<servlet-class>project.server.Submit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>submit</servlet-name>
+		<url-pattern>/Submit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Record</servlet-name>
+		<servlet-class>project.server.Record</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Record</servlet-name>
+		<url-pattern>/Record</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Image</servlet-name>
+		<servlet-class>project.server.ImageSever</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Image</servlet-name>
+		<url-pattern>/Image</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Sinfo</servlet-name>
+		<servlet-class>project.server.studentinfo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Sinfo</servlet-name>
+		<url-pattern>/Sinfo</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>GetImageServlet</servlet-name>
+        <servlet-class>student.GetImageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetImageServlet</servlet-name>
+        <url-pattern>/getImageServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>GetInfoServlet</servlet-name>
+        <servlet-class>student.GetInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetInfoServlet</servlet-name>
+        <url-pattern>/getInfoServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ChangePasswordServlet</servlet-name>
+        <servlet-class>student.ChangePasswordServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChangePasswordServlet</servlet-name>
+        <url-pattern>/changePasswordServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>GetRecordServlet</servlet-name>
+        <servlet-class>student.GetRecordServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetRecordServlet</servlet-name>
+        <url-pattern>/getRecordServlet</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>Returnimage</servlet-name>
+        <servlet-class>student.Returnimage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Returnimage</servlet-name>
+        <url-pattern>/Returnimage</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+		<servlet-name>feature</servlet-name>
+		<servlet-class>student.Getfeature</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>feature</servlet-name>
+		<url-pattern>/Getfeature</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>fea</servlet-name>
+		<servlet-class>student.Returnfeature</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>fea</servlet-name>
+		<url-pattern>/Returnfeature</url-pattern>
+	</servlet-mapping>
+
+</web-app>
